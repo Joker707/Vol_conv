@@ -38,36 +38,25 @@ public class Main {
             }
         }
         String fullType = inputType + " -> " + outputType;
-        result(fullType, value);
+        System.out.println(result(fullType, value));
     }
 
-    private static void result(String fullType, Double value) {
-        String result;
+    static Double result(String fullType, Double value) {
         switch (fullType) {
             case "bls -> gal" :
-                result = String.format("%.3f", value * 42);
-                System.out.println(value + " bls -> " + result + " gal");
-                break;
+                return value * 42;
             case "bls -> l" :
-                result = String.format("%.3f", value * 158.97);
-                System.out.println(value + " bls -> " + result + " l");
-                break;
+                return value * 158.97;
             case "gal -> bls" :
-                result = String.format("%.3f", value * 0.024);
-                System.out.println(value + " gal -> " + result + " bls");
-                break;
+                return value * 0.024;
             case "gal -> l" :
-                result = String.format("%.3f", value * 3.785);
-                System.out.println(value + " gal -> " + result + " l");
-                break;
+                return value * 3.785;
             case "l -> bls" :
-                result = String.format("%.3f", value * 0.0063);
-                System.out.println(value + " l -> " + result + " bls");
-                break;
+                return value * 0.0063;
             case "l -> gal" :
-                result = String.format("%.3f", value * 0.264);
-                System.out.println(value + " l -> " + result + " gal");
-                break;
+                return value * 0.264;
+            default:
+                return -1.0;
         }
     }
 }
