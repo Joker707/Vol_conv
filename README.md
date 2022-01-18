@@ -1,5 +1,10 @@
 # Volume_converter
 
+**CI for 'master' branch**  
+[![CI master](https://github.com/Joker707/Vol_conv/blob/develop/.github/workflows/maven.yml/badge.svg?branch=master)](https://github.com/Joker707/Vol_conv/blob/develop/.github/workflows/maven.yml)    
+**CI for 'dev' branch**    
+[![CI develop](https://github.com/Joker707/Vol_conv/blob/develop/.github/workflows/maven.yml/badge.svg?branch=develop)](https://github.com/Joker707/Vol_conv/blob/develop/.github/workflows/maven.yml)
+
 This service allows you to convert some values to each other:
 - bls (barrels)
 - gal (gallons)
